@@ -1,0 +1,86 @@
+{
+  "envelope": {
+    "schema": "7d7b-report",
+    "schema_version": 1,
+    "tool": "FileSift",
+    "tool_version": "1.0.0",
+    "run_id": "3a76f44d-cf65-4977-b420-4a93dd74c654",
+    "started_at": "2026-10-25T15:51:38Z",
+    "completed_at": "2026-10-25T15:51:38Z"
+  },
+  "status": "changes_detected",
+  "result": "changes_detected",
+  "target": {
+    "label": "demo-data",
+    "root_fingerprint": "sha256:17b871fdc0f7f9a3d7aff1cf8ba9539cc82d77b62d7cbd9c802afece188469d5"
+  },
+  "baseline": {
+    "sha256": "3276e31bc5bd9d677bd3451c7a2e554b66ace1930f462efe805b3dcbbdef0a72",
+    "created_at": "2026-10-25T15:51:37Z",
+    "authenticated": false,
+    "root_match": true
+  },
+  "coverage": {
+    "complete": true,
+    "entries_inventoried": 3,
+    "excluded_by_pattern": 0,
+    "artifacts_excluded": 0,
+    "exclusions_applied": [],
+    "unverified_prefixes": []
+  },
+  "summary": {
+    "added": 1,
+    "modified": 1,
+    "deleted": 1,
+    "type_changed": 0,
+    "permissions_changed": 1,
+    "unreadable": 0,
+    "unstable": 0,
+    "unverified": 0,
+    "errors": 0
+  },
+  "findings": [
+    {
+      "event": "MODIFIED",
+      "category": "integrity",
+      "subject": "config/settings.json",
+      "details": {
+        "old_sha256": "91b415068e9e02958c86464025e0c061ed4e6df05b175751c9fa627e9983e989",
+        "new_sha256": "5ecd15ca290addbb878a1df42071196b54781a1c6f620010baeb948e518144c9",
+        "old_size": 16,
+        "new_size": 15,
+        "mode_changed": false
+      }
+    },
+    {
+      "event": "DELETED",
+      "category": "integrity",
+      "subject": "old_script.py",
+      "details": {
+        "type": "file",
+        "sha256": "97c4f788fb574f2bbff6ebca249c20a6c8bfa66797a8cf6381912b460f536783",
+        "size_bytes": 16
+      }
+    },
+    {
+      "event": "PERMISSIONS_CHANGED",
+      "category": "integrity",
+      "subject": "scripts/backup.py",
+      "details": {
+        "old_mode": "0644",
+        "new_mode": "0755"
+      }
+    },
+    {
+      "event": "ADDED",
+      "category": "integrity",
+      "subject": "scripts/new_task.py",
+      "details": {
+        "type": "file",
+        "sha256": "6e8ee91142e43470dbbbf3188b4ca00c123a2847e3f14241d00bff3f9531fff1",
+        "size_bytes": 13
+      }
+    }
+  ],
+  "errors": []
+}
