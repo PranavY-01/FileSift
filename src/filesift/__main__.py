@@ -1,0 +1,6 @@
+"""Allow ``python -m filesift``."""
+
+from filesift.cli import main
+
+if __name__ == "__main__":
+    main()
